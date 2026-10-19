@@ -81,26 +81,28 @@ analytics:
     tracking_id:
 
 # Keep the personal site limited to existing About and Publications pages.
-# Unused template demonstration content is retained in the fork but not built.
+# Unused template content is retained in the fork but not built or published.
 include:
   - .htaccess
   - _pages
-  - files
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
   - .asset-cache
   - .bundle
+  - .devcontainer
   - .github
   - .jekyll-assets-cache
   - .sass-cache
   - assets/js/_main.js
   - assets/js/plugins
   - assets/js/vendor
+  - AGENTS.md
   - CHANGELOG
   - Capfile
   - config
   - Dockerfile
+  - docker-compose.yaml
   - Gemfile
   - Gruntfile.js
   - gulpfile.js
@@ -113,6 +115,8 @@ exclude:
   - README
   - tmp
   - vendor
+  - files
+  - scripts
   - _drafts
   - _posts
   - _portfolio
